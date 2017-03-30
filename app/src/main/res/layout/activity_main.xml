@@ -8,90 +8,12 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.labdesenvolvimento.amazingapp.MainActivity">
+    tools:context="com.example.labdesenvolvimento.zzz.MainActivity">
 
-    <Button
-        android:onClick="exibir"
-        android:text="Enviar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editFrase"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/button" />
-
-    <EditText
+    <ListView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:hint="Digite uma frase"
-        android:ems="10"
-        android:layout_marginTop="15dp"
-        android:id="@+id/editFrase"
-        android:layout_below="@+id/textFrase"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Informe uma frase:"
-        android:id="@+id/textFrase"
-        android:textSize="30sp"
-        android:textColor="@color/colorPrimary"
-        android:textStyle="normal|bold"
-        android:textAlignment="center"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textResult"
-        android:textSize="30sp"
-        android:textColor="@color/colorPrimary"
-        android:textStyle="normal|bold"
-        android:textAlignment="center"
-        android:layout_below="@+id/number1"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="9dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Informe dois números:"
-        android:id="@+id/textSoma"
-        android:textSize="30sp"
-        android:textColor="@color/colorPrimary"
-        android:textStyle="normal|bold"
-        android:textAlignment="center"
-        android:layout_marginBottom="26dp"
-        android:layout_above="@+id/number2"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:onClick="maiorMenor"
-        android:text="Enviar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button2"
-        android:layout_below="@+id/textResult"
-        android:layout_toEndOf="@+id/number1" />
-
-    <EditText
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:id="@+id/number1"
-        android:layout_width="150px"
-        android:layout_alignBaseline="@+id/number2"
-        android:layout_alignBottom="@+id/number2"
-        android:layout_toStartOf="@+id/button" />
-
-    <EditText
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:id="@+id/number2"
+        android:layout_height="match_parent"
         android:layout_centerVertical="true"
-        android:layout_toEndOf="@+id/button2"
-        android:layout_width="150px" />
+        android:layout_centerHorizontal="true"
+        android:id="@+id/listFilmes" />
 </RelativeLayout>
